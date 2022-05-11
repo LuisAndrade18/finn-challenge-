@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #2CB3F3;
+}
+
+.box_header {
+  margin: 5vh 0 15vh;
+  width: 100%;
+}
+
+.header_title {
+  text-align: center;
+  font-family: 'Roboto';
+
+}
+
+.header_title h1 {
+  font-size: 3.5em;
+  font-weight: 500;
+}
+
+.header_title h4 {
+  font-size: 1.875em;
+  font-weight: 400;
+}
+
+.main_ear--left {
+  width: 20%;
+  height: 30%;
+  border-radius: 50% 50% 0 0;
+  background-color: #fff;
+  position: absolute;
+  top: -15%;
+}
+
+.main_ear--right {
+  width: 20%;
+  height: 30%;
+  border-radius: 50% 50% 0 0;
+  background-color: #fff;
+  position: absolute;
+  top: -15%;
+  left: 100%;
+  transform: translate(-100%);
+}
+
+.main_cap {
+  width: 58vw;
+  height: 78vh;
+  background-color: #fff;
+  position: relative;
+  margin: 0 auto;
+}
+
+.main_face {
+  width: 80%;
+  height: 80%;
+  background-color: #FFE1C9;
+  border-radius: 100% ;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items:center;
+}
+
+.main_face input {
+  width: 30%;
+  height: 7.5%;
+  border: solid #000;
+  position:absolute;
+  font-size: 1.5vw;
+  font-family: 'Roboto';
+  font-size: 1.5vw;
+}
+
+.main_face input[type="email"] {
+  top: 60%;
+}
+
+.main_face input[type="password"] {
+  top: 67.5%;
+  border-radius: 0 0 50% 50%;
+}
+
+.main_face input::placeholder {
+  text-align: center;
+  font-family: 'Roboto';
+  font-size: 1.5vw;
+  text-transform: capitalize;
+  padding: 18px;
+}
+
+
+.main_eye--left {
+  background-color: #000;
+  width: 4vw;
+  height: 4vw;
+  border-radius: 100%;
+  position: absolute;
+  top: 25%;
+  right:65% ;
+}
+
+.main_eye--right {
+  background-color: #000;
+  width: 4vw;
+  height: 4vw;
+  border-radius: 100%;
+  position: absolute;
+  top: 25%;
+  right: 26.2%;
+}
+
+.main_button {
+  width: 10vw; 
+  height: 10vh;
+  background-color: #55A603;
+  box-shadow: 0 3px 10px #000;
+  margin: 30px auto;
+  border-radius: 5%;
+  font-size: 1.5vw;
+  color: #B2F272;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto';
+}
+
+.main_button:hover {
+  cursor: pointer;
+}
+
+
+@media (max-width:500px) {
+  body {
+    background-color: #000;
+  }
+}
+
+@media (min-width:1300px) {
+  body {
+    background-color: #55A603;
+  }
+}
+
+@media (min-width:1800px) {
+  body {
+    background-color: #ba833a;
+  }
+}
